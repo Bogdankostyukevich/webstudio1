@@ -1,3 +1,155 @@
-body {
-    background-color: tomato;
+:root {
+    --primeri-title-color: #212121;
+    --accent-color: #2196f3;
+    --background: #2f303a;
+    --footer-contacts-color: rgba(255, 255, 255, 0.6);
+    --primeri-text-color: #757575;
+    --white-color: #ffffff;
 }
+
+body {
+    font-family: roboto, sans-serif;
+}
+/* глобальний селектор */
+* {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+.color__title,
+.team__text {
+    color: var(--primeri-title-color);
+}
+
+/* логотип */
+.logo {
+    font-family: raleway, sans-serif;
+    color: var(--accent-color);
+
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 0.03em;
+}
+
+.header__color-logo {
+    color: var(--primeri-title-color);
+}
+
+.navigation__link {
+    color: var(--primeri-title-color);
+}
+
+.navigation__link.current {
+    color: var(--accent-color);
+}
+
+.navigation__link,
+.contacts__list-link {
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+}
+.contacts__list-link {
+    text-decoration: none;
+    color: var(--primeri-text-color);
+}
+
+.navigation__link:hover,
+.navigation__link:focus {
+    color: var(--accent-color);
+    cursor: pointer;
+}
+
+.contacts__list-link:hover,
+.contacts__list-link:focus {
+    color: var(--accent-color);
+    cursor: pointer;
+}
+
+.current {
+    color: black;
+}
+
+/* секція герой */
+.hiro__title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+}
+
+.hiro__button {
+    background-color: var(--accent-color);
+    color: var(--white-color);
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+}
+/* іноваційні рішення */
+.innovations__title {
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+}
+
+.innovations__text,
+.address,
+.footer__list-link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+}
+
+/* приклади робіт */
+.work__title,
+.team__title {
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 0.03em;
+}
+
+/* команда професіоналів */
+.team__text {
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+}
+
+.team__list-text {
+    color: var(--primeri-text-color);
+
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+}
+
+/* підвал */
+.footer {
+    background-color: var(--background);
+}
+
+.footer__color-logo,
+.address {
+    color: var(--white-color);
+}
+
+.address {
+    font-style: normal;
+}
+
+.footer__list-link {
+    color: var(--footer-contacts-color);
+}
+
+.footer__list-link:hover,
+.footer__list-link:focus {
+    color: var(--accent-color);
+    cursor: pointer;
+}
+
+

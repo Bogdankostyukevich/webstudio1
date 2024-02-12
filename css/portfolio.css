@@ -1,0 +1,150 @@
+:root {
+    --primeri-title-color: #212121;
+    --accent-color: #2196f3;
+    --background: #2f303a;
+    --footer-contacts-color: rgba(255, 255, 255, 0.6);
+    --primeri-text-color: #757575;
+    --button-color: #f5f4fa;
+    --white-color: #ffffff;
+}
+
+
+/* глобальний селектор */
+* {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: roboto, sans-serif;
+} 
+
+h1, h2 {
+    display: none;
+}
+/* шапка сайту */
+
+
+
+/* логотип */
+.portfolio__header-link,
+.portfolio__footer-link {
+    font-family: Raleway, sans-serif;
+}
+.portfolio__logo {
+    color: var(--accent-color);
+    cursor: pointer;
+
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 0.03em;
+}
+
+.portfolio__header-logo,
+.nav__list-link {
+    color: var(--primeri-title-color);
+}
+
+.nav__list-link {
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+}
+
+/* навігація сайту */
+
+.nav__list-link:hover,
+.nav__list-link:focus,
+.portfolio__contacts-link:hover,
+.portfolio__contacts-link:focus {
+    color: var(--accent-color);
+}
+
+.current {
+    color: var(--accent-color);
+}
+
+.portfolio__contacts-link {
+    color: var(--primeri-text-color);
+}
+
+/* навігація проектів */
+.projects__list-button {
+    font-family: roboto, sans-serif;
+    background-color: var(--button-color);
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+}
+
+.projects__list-button:hover,
+.projects__list-button:focus {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+    cursor: pointer;
+}
+
+/* приклади робіт */
+.product-card__text {
+    color: var(--primeri-title-color);
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.product-card__list-text {
+    color: var(--primeri-text-color);
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.03em;
+}
+
+
+/* портфоліо підвал */
+
+.portfolio__footer {
+    background-color: var(--background);
+}
+
+.portfolio__footer-link {
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 0.03em;
+}
+
+.portfolio__footer-logo {
+    color: var(--accent-color);
+}
+
+.portfolio__footer__color-logo,
+.portfolio__addres {
+    color: var(--white-color);
+}
+
+.portfolio__addres {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+}
+
+.portfolio__contacts-link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+}
+
+
+/* h1 {
+    visibility: hidden;
+} */
