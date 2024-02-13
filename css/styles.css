@@ -5,6 +5,7 @@
     --footer-contacts-color: rgba(255, 255, 255, 0.6);
     --primeri-text-color: #757575;
     --white-color: #ffffff;
+    --background-teat-section: #f5f4fa;
 }
 
 body {
@@ -18,9 +19,24 @@ body {
     padding: 0;
 }
 
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: 1px solid tomato;
+}
+
 .color__title,
 .team__text {
     color: var(--primeri-title-color);
+}
+
+/* шапка сайту */
+.header {
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 /* логотип */
@@ -73,7 +89,22 @@ body {
 }
 
 /* секція герой */
+.hiro {
+    background-color: var(--background);
+    text-align: center;
+
+    padding-top: 200px;
+    padding-bottom: 200px;
+    margin-bottom: 95px;
+
+
+
+}
 .hiro__title {
+    color: var(--white-color);
+
+    padding-bottom: 30px;
+
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -88,12 +119,24 @@ body {
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.06em;
+    min-width: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    border: 1px solid transparent;
+    border-radius: 4px;
 }
 /* іноваційні рішення */
+.innovations {
+    margin-bottom: 95px;
+}
+
 .innovations__title {
     font-weight: 700;
     font-size: 14px;
     letter-spacing: 0.03em;
+
+    margin-bottom: 10px;
 }
 
 .innovations__text,
@@ -106,6 +149,16 @@ body {
 }
 
 /* приклади робіт */
+.work {
+    margin-bottom: 95px;
+}
+
+.work__title {
+    text-align: center;
+
+    margin-bottom: 50px;
+}
+
 .work__title,
 .team__title {
     font-weight: 700;
@@ -113,7 +166,26 @@ body {
     letter-spacing: 0.03em;
 }
 
+.work__list-item:not(:last-child) {
+    margin-bottom: 30px;
+}
+
 /* команда професіоналів */
+.team {
+    background-color: var(--background-teat-section);
+    padding-top: 95px;
+    padding-bottom: 95px;
+}
+
+.team__title {
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.team__list-photo {
+    padding-bottom: 30px;
+}
+
 .team__text {
     font-weight: 500;
     font-size: 16px;
@@ -131,6 +203,8 @@ body {
 /* підвал */
 .footer {
     background-color: var(--background);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .footer__color-logo,
